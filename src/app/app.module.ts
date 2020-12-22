@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/home/landing/landing.component';
 import { SobreResumoComponent } from './components/home/sobre-resumo/sobre-resumo.component';
 import { UltimosProjetosComponent } from './components/home/ultimos-projetos/ultimos-projetos.component';
+import { UltimosPostsComponent } from './components/home/ultimos-posts/ultimos-posts.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UltimosProjetosComponent } from './components/home/ultimos-projetos/ult
     HomeComponent,
     LandingComponent,
     SobreResumoComponent,
-    UltimosProjetosComponent
+    UltimosProjetosComponent,
+    UltimosPostsComponent
   ],
   imports: [
     BrowserModule,
