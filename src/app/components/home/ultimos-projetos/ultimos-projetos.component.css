@@ -1,0 +1,34 @@
+h1 {
+    font-weight: bold;
+    padding-top: 40px;
+    text-align: center;
+}
+
+h4 {
+    font-weight: bold;
+    color: #00CDAC;
+    padding-top: 25px;
+}
+
+.botao-branco {
+    color: #00CDAC;
+    border-color: #00CDAC;
+    margin-top: 25px;
+    font-size: min(5vw, 20px);
+}
+
+.botao-branco:hover {
+    color: #fff;
+    border-color: #00CDAC;
+    background-color: #00CDAC;
+}
+
+.projeto-item {
+    padding: 15px 0;
+}
+
+.projeto-item-imagem {
+    height: 250px;
+    background-image: url("../../../../assets/home-bg.jpg");
+    background-position: center;
+}
