@@ -8,6 +8,7 @@ import { LandingComponent } from './components/home/landing/landing.component';
 import { SobreResumoComponent } from './components/home/sobre-resumo/sobre-resumo.component';
 import { UltimosProjetosComponent } from './components/home/ultimos-projetos/ultimos-projetos.component';
 import { UltimosPostsComponent } from './components/home/ultimos-posts/ultimos-posts.component';
+import { FooterComponent } from './components/home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UltimosPostsComponent } from './components/home/ultimos-posts/ultimos-p
     LandingComponent,
     SobreResumoComponent,
     UltimosProjetosComponent,
-    UltimosPostsComponent
+    UltimosPostsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+.footer-container {
+    background-color: #00CDAC;
+    color: #fff;
+}
+
+h4 {
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul a {
+    color: #fff;
+}
