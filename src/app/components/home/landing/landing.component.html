@@ -1,11 +1,25 @@
 <div class="preencher">
+    <div class="menu-hamb" *ngIf="hambMenuOpen">
+        <div class="container fundo-menu-hamb">
+            <h2 (click)="toggleHambMenu()"> X</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="barra-nav">
-        <ul class="h2">
+        <ul class="h2 barra-nav-itens">
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Sobre</a></li>
         </ul>
+        <div class="barra-nav-icone">
+            <h1 class="hamb-menu-icone" (click)="toggleHambMenu()">X</h1>
+        </div>
     </div>
     <div class="centralizar">
         <div class="container">
