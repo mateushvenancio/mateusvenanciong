@@ -1,7 +1,9 @@
 <div class="preencher">
     <div class="menu-hamb" *ngIf="hambMenuOpen">
         <div class="container fundo-menu-hamb">
-            <h2 (click)="toggleHambMenu()"> X</h2>
+            <h2 (click)="toggleHambMenu()">
+                <fa-icon [icon]="iconeFechar"></fa-icon>
+            </h2>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
@@ -18,7 +20,9 @@
             <li><a href="#">Sobre</a></li>
         </ul>
         <div class="barra-nav-icone">
-            <h1 class="hamb-menu-icone" (click)="toggleHambMenu()">X</h1>
+            <h1 class="hamb-menu-icone" (click)="toggleHambMenu()">
+                <fa-icon [icon]="iconeMenu"></fa-icon>
+            </h1>
         </div>
     </div>
     <div class="centralizar">

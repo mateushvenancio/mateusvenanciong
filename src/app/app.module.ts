@@ -9,6 +9,7 @@ import { SobreResumoComponent } from './components/home/sobre-resumo/sobre-resum
 import { UltimosProjetosComponent } from './components/home/ultimos-projetos/ultimos-projetos.component';
 import { UltimosPostsComponent } from './components/home/ultimos-posts/ultimos-posts.component';
 import { FooterComponent } from './components/home/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/home/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
