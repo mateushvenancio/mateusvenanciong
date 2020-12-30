@@ -10,6 +10,7 @@ import { UltimosProjetosComponent } from './components/home/ultimos-projetos/ult
 import { UltimosPostsComponent } from './components/home/ultimos-posts/ultimos-posts.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LinksComponent } from './components/links/links.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SobreResumoComponent,
     UltimosProjetosComponent,
     UltimosPostsComponent,
-    FooterComponent
+    FooterComponent,
+    LinksComponent,
   ],
   imports: [
     BrowserModule,
