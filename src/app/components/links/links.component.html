@@ -1,0 +1,19 @@
+<div class="cabecalho">
+    <div class="imagem">
+        <img src="../../../assets/profile.png" class="rounded-circle img-fluid">
+    </div>
+    <div class="container">
+        <div class="texto">
+            Atalhos! Ou, se quiser mais detalhes, entra no meu site. Tem tudo e mais um pouco lá. Inclusive um blog. É o primeiro link!
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div *ngFor="let l of links">
+        <a href="{{l.url}}" target="_blank">
+            <button type="button" class="btn btn-outline-primary botao-verde">
+                {{ l.titulo }}
+            </button>
+        </a>
+    </div>
+</div>

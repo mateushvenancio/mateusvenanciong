@@ -1,0 +1,37 @@
+.cabecalho {
+    width: 100vw;
+    background-color: #00CDAD;
+}
+
+.imagem {
+    text-align: center;
+    padding: 20px;
+}
+
+.texto {
+    font-family: 'montserrat';
+    color: #fff;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: min(5vw, 25px);
+}
+
+.botao-verde {
+    color: #00CDAC;
+    border-color: #00CDAC;
+    width: 100%;
+    margin-top: 15px;
+    font-size: min(5vw, 20px);
+    transition: none;
+    transform: none;
+}
+
+.botao-verde:active,
+.botao-verde:hover,
+.botao-verde:focus {
+    color: #fff;
+    border-color: #00CDAC;
+    background-color: #00CDAC !important;
+    transition: none;
+    transform: none;
+}
