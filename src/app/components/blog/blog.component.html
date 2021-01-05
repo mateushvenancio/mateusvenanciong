@@ -1,0 +1,36 @@
+<div class="cabecalho">
+    <div class="blog-titulo">
+        <div class="titulo">Blog</div>
+    </div>
+</div>
+<div class="textinho">
+    <div class="container">
+        Aqui eu escrevo sobre alguns assuntos que eu acho que merece ser compartilhado.
+        Sinta-se livre pra deixar um feedback!
+    </div>
+</div>
+<div class="corpo">
+    <div class="container">
+        <hr />
+        <div *ngFor="let post of posts; let i = index">
+            <hr *ngIf="i != 0">
+            <div class="post-titulo">
+                <a href="{{ post.link }}" target="_blank">
+                    {{ post.title }}
+                </a>
+            </div>
+            <span class="post-data verde">{{ post.pubDate | date: 'dd/MM/yyyy' }}</span>
+            <span class="divisor"> > </span>
+            <span class="categoria verde" *ngFor="let tag of post.categories ">#{{tag}} </span>
+            <div class="post-resumo">
+                {{ removeHtml(post.content) | slice:0:250 }}
+            </div>
+            <div class="leia-mais">
+                <a href="{{ post.link }}" target="_blank">
+                    Leia mais >
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
