@@ -12,8 +12,6 @@ import { FooterComponent } from './components/home/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LinksComponent } from './components/links/links.component';
 import { BlogComponent } from './components/blog/blog.component';
-import { BlogFeedComponent } from './components/blog/blog-feed/blog-feed.component';
-import { BlogPostComponent } from './components/blog/blog-post/blog-post.component';
 import { MarkdownModule } from 'ngx-markdown';
 
 
@@ -28,8 +26,6 @@ import { MarkdownModule } from 'ngx-markdown';
         FooterComponent,
         LinksComponent,
         BlogComponent,
-        BlogFeedComponent,
-        BlogPostComponent,
     ],
     imports: [
         BrowserModule,
