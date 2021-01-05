@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post.model';
 import { DomSanitizer } from '@angular/platform-browser';
 import { faShare } from '@fortawesome/free-solid-svg-icons';
+import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
     selector: 'app-ultimos-posts',
@@ -14,14 +15,14 @@ export class UltimosPostsComponent implements OnInit {
     posts: Post[] = [];
     faShare = faShare
 
-    constructor(private http: HttpClient, private ds: DomSanitizer) { }
+    constructor(private service: PostsService, private ds: DomSanitizer) { }
 
     ngOnInit(): void {
         this.getPosts()
     }
 
     getPosts() {
-        this.http.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mateushvenancio').subscribe(
+        return this.service.getPosts().subscribe(
             result => {
                 console.log(result['items'])
 

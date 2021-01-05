@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireStorage } from '@angular/fire/storage';
@@ -10,19 +11,15 @@ export class PostsService {
 
     posts: Post[];
 
-    constructor(private db: AngularFirestore, private store: AngularFireStorage) {
+    constructor(private http: HttpClient) {
 
     }
 
     getPosts() {
-        return this.db.collection('posts').get()
+        return this.http.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mateushvenancio')
     }
 
-    getSinglePost(id: string) {
-        return this.db.collection('posts').doc(id).get()
-    }
-
-    getMdPost(id: string) {
-        return this.store.ref('/' + id + '/post.md').getDownloadURL()
+    removeHtml(cont: string): string {
+        return cont ? String(cont).replace(/<[^>]+>/gm, '') : '';
     }
 }
