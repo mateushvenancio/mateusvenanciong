@@ -1,0 +1,37 @@
+<div class="cabecalho">
+    <div class="blog-titulo">
+        <div class="titulo">Portfolio</div>
+    </div>
+</div>
+<div class="textinho">
+    <div class="container">
+        Aqui eu mostro um pouco dos projetos que eu fiz. Estão todos no GitHub.
+        Ainda não coloquei <i>tags</i> nos projetos, pra diferenciar de que tecnologia é cada um.
+        Mas qualquer coisa pode entrar no meu GitHub (no final da página tem o link) e lá vai estar tudo separado por
+        tecnologias.
+        <hr>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 card-container" *ngFor="let proj of projetos">
+            <div class="projeto-item-card">
+                <div>
+                    <fa-icon [icon]="githubIcon" size="2x" [styles]="{'color': '#00cdac'}"></fa-icon>
+                    <span class="projeto-item-card-titulo">/{{ proj.title }}</span>
+                </div>
+                <div class="projeto-item-card-desc">
+                    <span *ngIf="proj.description != null">{{ proj.description }}</span>
+                    <span *ngIf="proj.description == null"> <i>Sem descrição, mas tem mais na página do projeto!</i>
+                    </span>
+                </div>
+                <div class="projeto-item-card-vermais">
+                    <a href="{{ proj.projeto_url }}" target="_blank">
+                        Ver mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
