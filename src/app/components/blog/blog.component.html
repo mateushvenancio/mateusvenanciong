@@ -12,6 +12,9 @@
 <div class="corpo">
     <div class="container">
         <hr />
+        <div class="sem-posts" *ngIf="posts.length <= 0">
+            <i>Ainda sem posts!</i>
+        </div>
         <div *ngFor="let post of posts; let i = index">
             <hr *ngIf="i != 0">
             <div class="post-titulo">
