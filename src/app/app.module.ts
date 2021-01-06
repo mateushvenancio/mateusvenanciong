@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LinksComponent } from './components/links/links.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MarkdownModule } from 'ngx-markdown';
         FooterComponent,
         LinksComponent,
         BlogComponent,
+        PortfolioComponent,
     ],
     imports: [
         BrowserModule,
