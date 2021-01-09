@@ -1,0 +1,26 @@
+<div class="menu-hamb" *ngIf="hambMenuOpen">
+    <div class="container fundo-menu-hamb">
+        <h2 (click)="toggleHambMenu()">
+            <fa-icon [icon]="iconeFechar"></fa-icon>
+        </h2>
+        <ul>
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="/blog">Blog</a></li>
+            <li><a routerLink="/portfolio">Portfolio</a></li>
+            <li><a routerLink="/sobre">Sobre</a></li>
+        </ul>
+    </div>
+</div>
+<div class="barra-nav">
+    <ul class="h2 barra-nav-itens">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="/blog">Blog</a></li>
+        <li><a routerLink="/portfolio">Portfolio</a></li>
+        <li><a routerLink="/sobre">Sobre</a></li>
+    </ul>
+    <div class="barra-nav-icone">
+        <h1 class="hamb-menu-icone" (click)="toggleHambMenu()">
+            <fa-icon [icon]="iconeMenu" [styles]="{'color': 'white'}"></fa-icon>
+        </h1>
+    </div>
+</div>
