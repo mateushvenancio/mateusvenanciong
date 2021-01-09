@@ -8,12 +8,14 @@ import { LandingComponent } from './components/home/landing/landing.component';
 import { SobreResumoComponent } from './components/home/sobre-resumo/sobre-resumo.component';
 import { UltimosProjetosComponent } from './components/home/ultimos-projetos/ultimos-projetos.component';
 import { UltimosPostsComponent } from './components/home/ultimos-posts/ultimos-posts.component';
-import { FooterComponent } from './components/home/footer/footer.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LinksComponent } from './components/links/links.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SobreComponent } from './components/sobre/sobre.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
         LinksComponent,
         BlogComponent,
         PortfolioComponent,
+        SobreComponent,
+        NavbarComponent,
     ],
     imports: [
         BrowserModule,
